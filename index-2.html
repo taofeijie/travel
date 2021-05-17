@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style/style.1.css"/>
+<body>
+<!--nav start-->
+<div id="p"></div>
+<div id="p2"></div>
+<div id="cursor"></div>
+<div class="nav">
+	<div class="nav-1">TFG</div>
+    <ul>
+        <a href="index.html"><li class="nav_a">首页</li></a>
+        <a href="#"><li style="border-bottom:1px solid #FFF">观光景点</li></a>
+        <a href="index-4.html"><li class="nav_a">导游团队</li></a>
+		<a href="index-3.html"><li class="nav_a">旅行日记</li></a>
+        <a href="logo.html"><li class="nav_a">关于我们</li></a> 
+    </ul>  
+</div>
+
+<!--nav end-->
+<!--main start-->
+<div class="main" align="center">
+		<div class="title">
+					<div class="title_img_container" style="width: 100%;height: 896px; overflow: hidden;">
+						<img class="img1" style="transition: all 100ms;" src="images.1/7.jpg" width="100%" height="896px" >
+					</div>
+		        <div class="title1">
+		           <h1>Tourist Attraction<h1>
+		        </div>
+		        <div class="title2">Tourism Is Kind Of Empathy Of Hand. So, Just Can Have Thick Numberous Enjoyment And Harveat</div>
+		</div>
+    <!--main:one start-->
+    <div class="main1">
+    	<div class="main1-1">
+        	<h1> ANY FAR PLACE<h1>
+            <h2 id="main1-1H2">Some Things Do Not Do Now,Will Never Do In The Their Lifetime,So Brave To Set Out.</h2>
+        </div>
+        <div class="main1-2">
+        	<button id="main1-2a" style="background:#00B29E;color:#FFF">ALL</button>
+            <button id="main1-2b">巴厘岛</button><!--实现点击时出现相对应图片 -->
+            <button id="main1-2a" style="margin-left:10px">巴黎</button><!--实现点击时出现相对应图片 -->
+            <button id="main1-2b">尼维斯岛</button><!--实现点击时出现相对应图片 -->
+        </div>
+        <div class="main1-3" align="left">
+        	<li class="main1-3_li" style="animation-duration: 1000ms;">
+            	<a href="index-2a.htm"><img class="img_a" src="images.1/12.jpg"width="370"height="300px"></a><p>
+                <span>&emsp;库塔海滩</span>
+            </li>
+            <li class="main1-3_li" style="animation-duration: 800ms;">
+            	<img src="images.1/7.jpg"width="370"height="308px"><p>
+                <span>&emsp;海神庙</span>
+            </li>
+            <li class="main1-3_li">
+            	<img src="images.1/13.jpeg"width="370"height="308px"><p>
+                <span>&emsp;帕尼达岛</span>
+            </li>
+        </div>
+        <div class="main1-3" align="left">
+        	<li class="main1-3_li" style="animation-duration: 1000ms;">
+            	<img src="images.1/10.jpg"width="370"height="308px"><p>
+                <span>&emsp;卢浮宫</span>
+            </li>
+            <li class="main1-3_li" style="animation-duration: 800ms;">
+            	<img src="images.1/15.jpg"width="370"height="308px"><p>
+                <span>&emsp;梅里雪山</span>
+            </li>
+            <li class="main1-3_li">
+            	<img src="images.1/9.jpg"width="370"height="308px"><p>
+                <span>&emsp;蓝梦岛</span>
+            </li>
+        </div>
+        <div class="main1-3" align="left">
+        	<li class="main1-3_li" style="animation-duration: 1000ms;">
+            	<img src="images.1/6.jpg"width="370"height="308px"><p>
+                <span>&emsp;塞纳河</span>
+            </li>
+            <li class="main1-3_li" style="animation-duration: 800ms;">
+            	<img src="images.1/14.jpg"width="370"height="308px"><p>
+                <span>&emsp;帕尼达岛</span>
+            </li>
+            <li class="main1-3_li">
+            	<img src="images.1/11.jpg"width="370"height="308px"><p>
+                <span>&emsp;埃菲尔铁塔</span>
+            </li>
+        </div>
+    </div> 
+    <!--main:one end-->
+	<!-- <div class="demo"> -->
+		<div class="copy1">
+			<img src="images.1/copy.png">
+		    <div class="copy1a">&copy;来自商工web项目设计大赛-桃李组。</div>
+		    <div class="copy1b">
+		         Company<p>
+		        <span>Specialty</span><p>
+		        <span>Ardour</span><p>
+		        <span>Bright</span><p>
+		        <span>Comfort</span>
+		    </div>
+		    <div class="copy1c">
+		         Contact number<p>
+		        <span>(753)654-78922</span><p>
+		        <span style="text-decoration:underline">mail&copy;taofeijie.com</span><p>
+		    </div>  
+		</div>
+	<!-- </div> -->
+</div>
+<!--main end-->
+<!--copyright start-->
+
+<!--copyright end -->
+
+<script type="text/javascript">
+	if ("scrollRestoration" in history) {
+		history.scrollRestoration = "manual";
+	}
+	
+	var img = document.getElementsByClassName('img1')[0];
+	var pageX = 0;
+	var pageY = 0;
+	var delta = 0;
+	var main = document.getElementsByClassName('main')[0];
+	var li = document.getElementsByClassName('main1-3_li');
+	//窗体加载事件
+	window.onload = function(e){
+		document.getElementById('p2').style.animationPlayState = "running";
+	}
+	
+	//鼠标移动事件
+	document.onmousemove = function(e){
+		pageX = e.pageX;
+		pageY = e.pageY;
+	}
+	
+	//导航栏点击,页面跳转事件
+	document.getElementsByClassName('nav')[0].addEventListener('click',function(e){
+		e.preventDefault();
+		if(e.target.className == 'nav_a'){
+			document.getElementById('p').style.animationPlayState = "running";
+			document.cookie = 'true';
+			setTimeout(function(){
+				window.location.href = e.target.parentElement.href;
+			},400);
+		}
+	})
+	
+	//滚动事件，来获取滚动值。
+	document.body.addEventListener('mousewheel',function(e){
+		delta+=(e.wheelDelta/2);
+		if(delta>0){
+			delta=0;
+		}else if(delta<-1950){		//此数值为当前滚动到底部所累加的最大值。
+			delta=-1950;
+		}
+		
+		if(delta <= -1000){
+			li[8].style.animationPlayState = "running";
+			li[7].style.animationPlayState = "running";
+			li[6].style.animationPlayState = "running";
+		}else if(delta <= -750){
+			li[5].style.animationPlayState = "running";
+			li[4].style.animationPlayState = "running";
+			li[3].style.animationPlayState = "running";
+		}else if(delta <= -500){
+			li[2].style.animationPlayState = "running";
+			li[1].style.animationPlayState = "running";
+			li[0].style.animationPlayState = "running";
+		}else if(delta <= 150){
+			document.getElementById('main1-1H2').style.animationPlayState = "running";
+		}
+	});
+	
+	document.getElementsByClassName('main1-3')[0].addEventListener('click',function(e){
+		e.preventDefault();
+		if(e.target.className == 'img_a'){
+			document.getElementById('p').style.animationPlayState = "running";
+			document.cookie = 'true';
+			setTimeout(function(){
+				window.location.href = e.target.parentElement.href;
+			},400);
+		}
+	})
+	
+	//js动画。鼠标图标移动。
+	function move(){
+		document.getElementById('cursor').style.transform = "translate("+(pageX-10)+"px,"+(pageY-12)+"px)";
+		main.style.transform = "translate(0px,"+(delta)+"px)";
+		window.requestAnimationFrame(move);
+	}
+	window.requestAnimationFrame(move);
+</script>
+</body>
+</html>

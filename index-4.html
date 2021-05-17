@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<style>
+/* body{background:#00B29E} */
+body{margin: 0;background:url(index-4/l4.jpeg) bottom;background-size:100% 880px; background-repeat:no-repeat;background-attachment:fixed;overflow-x: hidden;overflow-y: hidden;}
+#nav{width:100%;height:70px;background-color:rgba(0,0,0,0.6);position:fixed; top:0rem; z-index:3}
+#nav-1{width:5rem;position:relative;left:13.2rem;line-height:4.38rem;font-family:"华文琥珀";font-size:60px;color:#FFF;float:left;cursor:default;}
+#nav ul{width:40rem;height:3.75rem;font-family:"幼圆";font-size:16px;margin:10px 640px;color:#FFF;text-align:center;position:relative;}
+#nav li{width:5.3rem;height:49px;line-height:50px;margin-left:42px;list-style:none;float:left;position:relative;cursor:pointer;}
+#nav a{text-decoration: none;color: white;}
+#nav li:hover{border-bottom:1px solid #FFF}
+#main{width:100%;transition:all 500ms ease-out;position: relative;top:0;left: 0;}
+#title{width:100%;height: 37.5rem; position:relative;background-image:url(index-4/nav7.jpg);background-repeat: no-repeat;background-size: 100% 602px;margin-top: -60px;}
+#headline{width:36rem;height:5.6rem;text-align:center;position:relative;top: 10rem;}
+#headline h1{font-family:"宋体";color:#FFF;font-size:53px;opacity: 0;animation: opacityText 700ms 300ms ease-out;animation-fill-mode: forwards;}
+#subtitle{width:33rem;height:3.6rem;font-family:"微软雅黑";font-size:20px;position:relative;top:228px;font-size:19px;color:#fff;line-height:46px;opacity: 0;animation: opacityText 700ms 600ms ease-out;animation-fill-mode: forwards;}
+#content{width:100%; position:relative;margin-top: -27px;}
+#content1{width:100%;height:18rem;background:#FFF;}
+#content1a{width:31rem;height:4.3rem;text-align:center;position:relative;top:2.5rem;border-bottom:2px solid #9B9B9B;}
+#content1a h1{font-family:"华文中宋";font-size:43px;opacity: 0;animation: opacityText 700ms 100ms ease-out;animation-fill-mode: forwards;}
+#content1a h2{width:50rem;height:2rem;font-family:"华文仿宋";line-height:30px;position:relative;top:30px;left:-140px;font-size:18px;color:#333;opacity: 0;animation: opacityText 700ms 300ms ease-out;animation-fill-mode: forwards;animation-play-state: paused;}
+.content2{width:100%;height:43rem;background-color:white;position: relative;}
+.content2a{width:45rem;height:26rem;position: absolute;left: 18%;top:38%;}
+.content2b{width:30rem;height:30rem;position:relative;float:left;}
+.content2c{width:28rem;height:26rem;position:relative;background-color:#fff;border:1px solid #11AA9D; top: 10rem; left:25rem;}
+.content2c h1{font-family:"仿宋"; font-weight:1000;font-size:34px;color:#11AA9D;line-height:30px;text-align:left; margin:46px 86px;opacity: 0;animation: opacityText 700ms 100ms ease-out;animation-fill-mode: forwards;animation-play-state: paused;}
+.content2c h2{font-family:"华文楷体";font-size:16px;color:#666;line-height:30px;text-align:left; margin:-30px 86px;opacity: 0;animation: opacityText 700ms 300ms ease-out;animation-fill-mode: forwards;animation-play-state: paused;}
+#content3{width:100%;height:29rem;text-align:left;color:#FFF;z-index:2;}
+#content3 h1{width: 60%;font-family:"宋体";font-size:54px;position:relative;left:10%;top:15%;opacity: 0;animation: opacityText 700ms 100ms ease-out;animation-fill-mode: forwards;animation-play-state: paused;}
+#content3 h2{width: 60%;font-family:"隶书";font-size:29px;position: relative;left:10%;top:6%;opacity: 0;animation: opacityText 700ms 300ms ease-out;animation-fill-mode: forwards;animation-play-state: paused;}
+#content3 h3{width: 60%;font-family:"仿宋";font-size:21px; font-weight:100px;line-height:31px;position:relative;top:6%;left: 10%;opacity: 0;animation: opacityText 700ms 500ms ease-out;animation-fill-mode: forwards;animation-play-state: paused;}
+.content4{width:100%;height:55rem;position: relative;background: white;}
+.content4a{width:480px;height:460px;border:1px solid #11AA9D;float:left;position:relative;right:-5rem;top:13rem;}
+.content4a h1{font-family:"仿宋"; font-weight:1000;font-size:32px;color:#11AA9D;line-height:40px;text-align:left; margin:98px 86px;opacity: 0;animation: opacityText 700ms 100ms ease-out;animation-fill-mode: forwards;animation-play-state: paused;}
+.content4a h2{font-family:"华文楷体";font-size:16px;color:#666;line-height:35px;text-align:left; margin:-80px 86px;opacity: 0;animation: opacityText 700ms 300ms ease-out;animation-fill-mode: forwards;animation-play-state: paused;}
+.content4b{width:590px;height:482px;float:right;position:relative;right:6rem;top:18rem;background:#D2D4D0;}
+.content4c{width:556px;height:593px;;position: absolute;right: 10%;top: 14%;}
+.ani_img{opacity: 0;animation: opacityImg 700ms 100ms ease-out;animation-fill-mode: forwards;animation-play-state: paused;}
+.our{width:100%;height:550px;background-image:url(index-4/nav6.jpg);background-size:100% 550px;background-repeat:no-repeat;position:relative;top:0px;z-index: 2;}
+.oura{font-family:"华文细黑";font-size:63px;color:#FFF;line-height:430px;position:relative;z-index: 2;}
+.ourb{width:190px;height:70px;border:1px solid #fff;font-family:"华文细黑";font-size:20px;color:#FFF;margin-top:-120px;line-height:70px;position: relative;z-index: 3;}
+.ourb:hover{animation: light 2s;animation-iteration-count: infinite;animation-direction: alternate; animation-fill-mode:none; animation-play-state: paused;animation-play-state: running;}
+.copy1{width:100%;height:420px;background:#161F1E;font-family:"华文细黑";font-size:20px;color:#FFF; position:relative;bottom: 0%; z-index:20;}
+.copy1 img{margin:40px 165px; float:left}
+.copy1a{width:340px;height:65px;position:relative;top:80%;right: 25%; font-family:"微软雅黑";font-size:14px;color:#A5A8A8;}
+.copy1b{width:160px;height:295px;position:relative;left:400px;font-family:"华文细黑";font-size:22px;color:#FFF;margin-top:20px;float:left;}
+.ourb:hover{animation: light 2s;animation-iteration-count: infinite;animation-direction: alternate; animation-fill-mode:none; animation-play-state: paused;animation-play-state: running;}
+.copy1b span{font-family:"微软雅黑";font-size:17px;color:#A5A8A8;}
+.copy1b p span:hover{text-shadow:white 1px 1px 3px;color: #FFFFFF;}
+.copy1c{width:200px;height:295px; position:relative;left:470px;margin-top:20px;font-family:"华文细黑";font-size:22px;color:#FFF;float:left;}
+.copy1c span{font-family:"微软雅黑";font-size:17px;color:#A5A8A8;}
+#cursor{width: 30px;height: 30px;border: 2px solid darkblue; border-radius: 16px;transition: all 300ms ease-out;position: absolute;z-index: 5;pointer-events: none;}
+#p{width: 110%;height: 800px;background-color: #E6E6E6;position: fixed;z-index: 300;top: 50%;margin-left: -8px;animation: ready 500ms ease-out;animation-play-state: paused;}
+#p2{width: 100%;height: 100%;background-color: #E6E6E6;position: fixed;top: 0%;z-index: 5;margin-left: 0px;animation: go 500ms ease-out;animation-play-state: paused;animation-fill-mode: forwards;border-top-right-radius: 10%;border-top-left-radius: 10%;}
+@keyframes ready{
+	0%{
+		top:100%;
+	}
+	60%,100%{
+		
+		top:0%;
+	}
+}
+@keyframes go{
+	0%,10%{
+		transform: translate(0px,0%);
+	}
+	100%{
+		transform: translate(0px,100%);
+	}
+}
+@keyframes opacityText{
+	0%{
+		/* opacity: 0; */
+		transform: translateY(100%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@keyframes opacityImg{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes light{
+	0%{
+		box-shadow: bisque 0px 0px 1px 1px;
+	}
+	100%{
+		box-shadow: bisque 0px 0px 10px 10px;
+		background-color: #00B29E;
+	}
+}	
+
+</style>
+<body>
+<!--nav start-->
+
+<div id="p"></div>
+<div id="p2"></div>
+<span id="cursor"></span>
+
+<div id="nav">
+	<div id="nav-1">TFG</div>
+    <ul>
+        <a href="index.html"><li class="nav_a">首页</li></a>
+        <a href="index-2.html"><li class="nav_a">观光景点</li></a>
+        <a href="#"><li style="border-bottom:1px solid #FFF">导游团队</li></a>
+				<a href="index-3.html"><li class="nav_a">旅行日记</li></a>
+        <a href="logo.html"><li class="nav_a">关于我们</li></a>
+    </ul>  
+</div>
+<!--nav end-->
+<!--main start-->
+
+<div id="main" align="center">
+	<div id="title">
+    	<!-- <img src="index-4/nav7.jpg" width="100%" height="800px"> -->
+        <div id="headline">
+           <h1>团队介绍<h1>
+        </div>
+       <strong id="subtitle">Carrying A Backpack On The Road, Saw Many People, <br>Heard Many Stories, Saw The Scenery Of Travel, So, Slowly Learned To Grow Up</strong>
+    </div>
+    <!--content start-->
+    <div id="content">
+    	<!--content:one start-->
+        <div id="content1">
+            <div id="content1a">
+                <h1> ANY FAR PLACE<h1>
+                <h2 id="cotent1aH2">The Use Of Travelling Is To Regulate Imagination By Reality,And Instead Of Thinling How Things May Be,To See Them As They Are</h2>
+            </div>
+        </div>
+        <!--content:one end-->
+        <!--content:two start-->
+        <div class="content2">
+        	<div class="content2a"></div>
+            <div class="content2b">
+            	<img class="ani_img" id="ani_img_1" src="index-4/nav3%20.jpg" width="950px" height="660px">
+            </div>
+            <div class="content2c">
+            	<h1 id="content2cH1">Travel diary<h1>
+                <h2 id="content2cH2">我们在乎的是沿途的风景。我们在乎的是看风景的心情。旅途不会因为美丽的风景而结束。我们走过的路已成为我们身后的风景。我们不能回去呆着。如果我们停留在这一刻，我们会错过更好的风景，保持平静和清醒的头脑。享受每一刻的感觉，享受每一个地方的风景，这就是生活<h2>
+            </div>
+        </div>
+        <!--content:two end--> 
+        <!--content:three start-->
+        <div id="content3" align="left">
+            <h1 id="content3H1">It Is A World</h1>
+            <h2 id="content3H2">Feel Free to Contact Our Agents Directly</h2>
+            <h3 id="content3H3">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum, consectetur ac ipsum in, egestas vestibulum tellus.</h3>
+				</div>
+        <!--content:three end-->
+        <!--content:fore start-->  
+        <div class="content4" align="left">
+            <div class="content4a">
+            	<h1 id="content4aH1">Travel diary<h1>
+                <h2 id="content4aH2">七月的意大利夜风清凉，钻进睡袋，也不觉得冷。仰望星空，那璀璨的天河，是最温暖的棉被。流转的时光，都成为命途中美丽的点缀，看天，看雪，安安静静，不言不语都是好风景。<h2>
+            </div>
+            <div class="content4b"></div>
+            <div class="content4c">
+            	<img class="ani_img" id="ani_img_2" src="index-4/4.jpg" width="556px" height="593px">
+            </div>
+        </div>
+				<div class="our" align="center">
+							<div class="oura">Record life</div>
+							<div class="ourb">Travel</div><!--设置鼠标放上去的时候边框动态逐渐变亮-->
+				</div>
+	</div>
+	<!--content:fore end--> 
+	
+	<div class="copy1">
+		<img src="images.1/copy.png">
+		<div class="copy1a">&copy;来自商工web项目设计大赛-桃李组。</div>
+		<div class="copy1b">
+			Company<p>
+			<span>Specialty</span><p>
+			<span>Ardour</span><p>
+			<span>Bright</span><p>
+			<span>Comfort</span>
+		</div>
+		<div class="copy1c">
+			Contact number<p>
+			<span>(753)654-78922</span><p>
+			<span style="text-decoration:underline">mail&copy;taofeijie.com</span><p>
+		</div>  
+	</div>
+</div>
+	
+
+<!--main end-->
+	
+	<script type="text/javascript">
+		var pageX = 0;
+		var pageY = 0;
+		var detla = 0;
+		var clientHeight = document.documentElement.height;
+		window.onload = function(e){
+			document.getElementById('p2').style.animationPlayState = "running";
+		}
+		
+		document.addEventListener('mousemove',function(e){
+			pageX = e.pageX;
+			pageY = e.pageY;
+		})
+		
+		
+		document.addEventListener('mousewheel',function(e){
+			detla+=(e.wheelDelta/3);
+			if(detla>0)
+				detla = 0;
+			if(detla<=-3120)
+				detla = -3120;
+			
+			if(detla <= -1500){
+				document.getElementById('ani_img_2').style.animationPlayState = "running";
+				document.getElementById('content4aH1').style.animationPlayState = "running";
+				document.getElementById('content4aH2').style.animationPlayState = "running";
+			}else if(detla<=-1000){
+				document.getElementById('content3H1').style.animationPlayState = "running";
+				document.getElementById('content3H2').style.animationPlayState = "running";
+				document.getElementById('content3H3').style.animationPlayState = "running";
+			}else if(detla <= -300){
+				document.getElementById('content2cH1').style.animationPlayState = "running";
+				document.getElementById('content2cH2').style.animationPlayState = "running";
+			}else if(detla <= -5){
+				document.getElementById('ani_img_1').style.animationPlayState = "running";
+				document.getElementById('cotent1aH2').style.animationPlayState = "running";
+			}
+				console.log(detla);
+		})
+		function move(){
+			document.getElementById('cursor').style.transform = "translate("+(pageX-18)+"px,"+(pageY-12)+"px)";
+			document.getElementById('main').style.transform = "translate(0px,"+detla+"px)";
+			window.requestAnimationFrame(move);
+		}
+		window.requestAnimationFrame(move);
+		document.getElementById('nav').addEventListener('click',function(e){
+			e.preventDefault();
+			if(e.target.className == 'nav_a'){
+				document.getElementById('p').style.animationPlayState = "running";
+				document.cookie = 'true';
+				setTimeout(function(){
+					window.location.href = e.target.parentElement.href;
+				},400);
+			}
+		})
+	</script>
+</body>
+</html>
